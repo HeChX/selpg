@@ -1,8 +1,8 @@
-#CLI命令行使用程序开发基础
-##设计说明
-参考了以下博客  
-[https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html)   
-引用如下包   
+# CLI命令行使用程序开发基础    
+## 设计说明
+参考了以下博客    
+[https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html)    
+引用如下包    
 ```
 import (
     "bufio"
@@ -32,7 +32,7 @@ func parseArgs(args *selpg_args) //用pflag解析命令
 func processArgs(args selpg_args) //检查参数
 func processInput(args selpg_args) //处理参数和输出
 ```
-##Usage
+## Usage
 ```
 [hechx6@centos-manager bin]$ selpg -h
 Usage of selpg:
@@ -49,7 +49,7 @@ selpg -s 10 -e 20 test.txt
 selpg -s 10 -e 20 -l 10 test.txt
 ```
 
-##测试
+## 测试   
 测试文件：   
 test.txt   
 ```
